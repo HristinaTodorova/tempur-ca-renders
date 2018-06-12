@@ -18,7 +18,7 @@
     "background": {
       "allOf": [
         {
-          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json"
         }
       ],
       "title": "Background image",
@@ -47,13 +47,15 @@
       "format": "text",
       "maxLength": 256
     },
-    "calltoactionurl": {
-      "title": "Call to action URL",
-      "description": "The URL for the call to action",
-      "type": "string",
-      "format": "uri",
-      "maxLength": 256
+    "cta": {
+      "type": "object",
+      "title": "Call to action",
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+        }
+      ]
     }
-
   }
 }
