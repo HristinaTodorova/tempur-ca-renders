@@ -1,0 +1,6 @@
+node_modules
+bower_components
+*.hot-update.js*
+*.hot-update.json
+.idea
+/.vs
