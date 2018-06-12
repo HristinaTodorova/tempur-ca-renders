@@ -16,11 +16,7 @@
   "type": "object",
   "properties": {
     "background": {
-      "allOf": [
-        {
-          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json"
-        }
-      ],
+      "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
       "title": "Background image",
       "description": "The background image for the banner",
       "type": "object"
@@ -51,11 +47,7 @@
       "type": "object",
       "title": "Call to action",
       "description": "",
-      "allOf": [
-        {
-          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
-        }
-      ]
+      "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
     }
   }
 }
