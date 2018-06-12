@@ -15,7 +15,7 @@
   ],
   "type": "object",
   "properties": {
-    "background": {
+    "image": {
       "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
       "title": "Background image",
       "description": "The background image for the banner",
@@ -32,13 +32,6 @@
     "strapline": {
       "title": "Strapline",
       "description": "The subtitle for this banner",
-      "type": "string",
-      "format": "text",
-      "maxLength": 256
-    },
-    "calltoactiontext": {
-      "title": "Call to action text",
-      "description": "The text you want displayed with the call to action",
       "type": "string",
       "format": "text",
       "maxLength": 256
