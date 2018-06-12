@@ -1,0 +1,59 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopBanner/hometopbanner.json",
+  "title": "Homepage top banner",
+  "description": "The top banner on Homepage",
+  "allOf": [
+    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+  ],
+  "propertyOrder": [
+    "headline",
+    "strapline",
+    "background",
+    "calltoactiontext",
+    "calltoactionurl"
+  ],
+  "type": "object",
+  "properties": {
+    "background": {
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        }
+      ],
+      "title": "Background image",
+      "description": "The background image for the banner",
+      "type": "object"
+    },
+    "headline": {
+      "title": "Headline",
+      "description": "The main title of this banner",
+      "type": "string",
+      "format": "text",
+      "minLength": 5,
+      "maxLength": 256
+    },
+    "strapline": {
+      "title": "Strapline",
+      "description": "The subtitle for this banner",
+      "type": "string",
+      "format": "text",
+      "maxLength": 256
+    },
+    "calltoactiontext": {
+      "title": "Call to action text",
+      "description": "The text you want displayed with the call to action",
+      "type": "string",
+      "format": "text",
+      "maxLength": 256
+    },
+    "calltoactionurl": {
+      "title": "Call to action URL",
+      "description": "The URL for the call to action",
+      "type": "string",
+      "format": "uri",
+      "maxLength": 256
+    }
+
+  }
+}
