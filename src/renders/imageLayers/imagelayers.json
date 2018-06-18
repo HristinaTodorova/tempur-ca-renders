@@ -1,0 +1,68 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopBanner/imagelayers.json",
+    "title": "Image layers",
+    "description": "Configure back and front images",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "imageLayer0",
+        "imageLayer1",
+        "anchor",
+        "imageLeftPosition",
+        "imageTopPosition",
+        "imageRightPosition",
+        "imageBottomPosition"
+    ],
+    "type": "object",
+    "properties": {
+        "imageLayer0": {
+            "title": "Back image Layer",
+            "description": "insert an image",
+            "type": "object",
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json"
+        },
+        "imageLayer1": {
+            "title": "Front image layer",
+            "description": "insert an image",
+            "type": "object",
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json"
+        },
+        "anchor": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 2,
+            "title": "Anchor",
+            "description": "e.g. TL"
+        },
+        "imageLeftPosition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3,
+            "title": "Second image layer position from the left",
+            "description": "Enter a percentage value (without a '%' sign)"
+        },
+        "imageTopPosition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3,
+            "title": "Second image layer position from the top",
+            "description": "Enter a percentage value (without a '%' sign)"
+        },
+        "imageRightPosition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3,
+            "title": "Second image layer position from the right",
+            "description": "Enter a percentage value (without a '%' sign)"
+        },
+        "imageBottomPosition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3,
+            "title": "Second image layer position from the bottom",
+            "description": "Enter a percentage value (without a '%' sign)"
+        }
+    }
+}
