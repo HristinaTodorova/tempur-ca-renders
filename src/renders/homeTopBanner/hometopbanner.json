@@ -16,7 +16,7 @@
   "type": "object",
   "properties": {
     "image": {
-      "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+      "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/imageLayers/imagelayers.json",
       "title": "Background image",
       "description": "The background image for the banner",
       "type": "object"
