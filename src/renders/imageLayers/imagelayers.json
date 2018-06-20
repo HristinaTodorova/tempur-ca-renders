@@ -39,28 +39,28 @@
         "imageLeftPosition": {
             "type": "string",
             "minLength": 1,
-            "maxLength": 3,
+            "maxLength": 5,
             "title": "Second image layer position from the left",
             "description": "Enter a percentage value (without a '%' sign)"
         },
         "imageTopPosition": {
             "type": "string",
             "minLength": 1,
-            "maxLength": 3,
+            "maxLength": 5,
             "title": "Second image layer position from the top",
             "description": "Enter a percentage value (without a '%' sign)"
         },
         "imageRightPosition": {
             "type": "string",
             "minLength": 1,
-            "maxLength": 3,
+            "maxLength": 5,
             "title": "Second image layer position from the right",
             "description": "Enter a percentage value (without a '%' sign)"
         },
         "imageBottomPosition": {
             "type": "string",
             "minLength": 1,
-            "maxLength": 3,
+            "maxLength": 5,
             "title": "Second image layer position from the bottom",
             "description": "Enter a percentage value (without a '%' sign)"
         }
