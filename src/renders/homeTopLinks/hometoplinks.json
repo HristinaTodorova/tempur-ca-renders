@@ -1,46 +1,42 @@
 {
-    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopLinks/hometoplinks.json",
-    "title": "Homepage top links",
-    "description": "Homepage top links below the top banner",
-    "allOf": [
-        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
-    ],
-    "propertyOrder": [
-        "topLinks",
-        "firstLink",
-        "secondLink",
-        "thirdLink",
-        "fourthLink"
-    ],
-    "type": "object",
-    "properties": {
-        "topLinks": {
-            "type": "array",
-            "items": {
-                "allOf": [
-                    {
-                        "$ref": "http://schema.system.cms.amplience.com/v0.0#/content-link"
-                    },
-                    {
-                        "properties": {
-                            "@type": {
-                                "enum": [
-                                    "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopLink/hometoplink.json"
-                                ]
-                            }
-                        }
-                    }
-                ],
-                "_semanticType": "http://semantic-type.cms.amplience.com/content"
-            },
-            "minItems": 1,
-            "maxItems": 5,
-            "_label": {
-                "value": "Links",
-                "hint": ""
-            },
-            "_semanticType": "http://semantic-type.cms.amplience.com/list"
-        }
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopLinks/hometoplinks.json",
+  "title": "Homepage top links",
+  "description": "Homepage top links below the top banner",
+  "allOf": [
+    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+  ],
+  "propertyOrder": [
+    "topLinks"
+  ],
+  "type": "object",
+  "properties": {
+    "topLinks": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://schema.system.cms.amplience.com/v0.0#/content-link"
+          },
+          {
+            "properties": {
+              "@type": {
+                "enum": [
+                  "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopLink/hometoplink.json"
+                ]
+              }
+            }
+          }
+        ],
+        "_semanticType": "http://semantic-type.cms.amplience.com/content"
+      },
+      "minItems": 1,
+      "maxItems": 5,
+      "_label": {
+        "value": "Links",
+        "hint": ""
+      },
+      "_semanticType": "http://semantic-type.cms.amplience.com/list"
     }
+  }
 }
