@@ -1,0 +1,21 @@
+<div class="amp-home-video-wrapper">
+    <div class="amp-home-video">
+        {{dynamicTemplate renderTypes.video renderTypes video}}
+    </div>
+    <div class="amp-home-video-text">
+        {{#if header}}
+        <div class="amp-home-video-header">{{header}}</div>
+        {{/if}}
+        {{#if subheader}}
+        <div class="amp-home-video-subheader">{{subheader}}</div>
+        {{/if}}
+        {{#if description}}
+        <div class="amp-home-video-text">{{description}}</div>
+        {{/if}}
+        {{#if button.value}}
+        <a href="{{button.value}}"
+           class="amp-ca-banner-button {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
+        {{/if}}
+    </div>
+</div>
+

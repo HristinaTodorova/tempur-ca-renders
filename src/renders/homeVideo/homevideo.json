@@ -1,0 +1,56 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeVideo/homevideo.json",
+    "title": "Homepage link with image",
+    "description": "Homepage link with image",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "video",
+        "header",
+        "subheader",
+        "description",
+        "button"
+    ],
+    "type": "object",
+    "properties": {
+        "video": {
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/video.json",
+            "title": "Video",
+            "description": "Homepage video",
+            "type": "object"
+        },
+        "subheader": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 255,
+            "title": "Subheader",
+            "description": "add subheader"
+        },
+        "header": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 255,
+            "title": "Header",
+            "description": "add header"
+        },
+        "description": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 2000,
+            "title": "Description",
+            "description": "add description"
+        },
+        "button": {
+            "title": "Button",
+            "description": "add button",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+                }
+            ]
+        }
+    }
+}
