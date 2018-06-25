@@ -1,0 +1,15 @@
+<div class="amp-top-link-wrapper">
+    <div class="amp-top-link-img">
+        {{dynamicTemplate renderTypes.image renderTypes image}}
+    </div>
+    <div class="amp-top-link">
+        {{#if cta.value}}
+        <a href="{{cta.value}}"
+           class="amp-ca-banner-button {{#if style}}{{style}}{{/if}}">{{cta.label}}</a>
+        {{/if}}
+        {{#if strapline}}
+        <div class="amp-link-text">{{strapline}}</div>
+        {{/if}}
+    </div>
+</div>
+

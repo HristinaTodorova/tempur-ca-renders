@@ -1,0 +1,36 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopLink/hometoplink.json",
+    "title": "Homepage link with image",
+    "description": "Homepage link with image",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "image",
+        "strapline",
+        "cta"
+    ],
+    "type": "object",
+    "properties": {
+        "image": {
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+            "title": "Link image",
+            "description": "The image next to the link",
+            "type": "object"
+        },
+        "cta": {
+            "type": "object",
+            "title": "Call to action",
+            "description": "",
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+        },
+        "strapline": {
+            "title": "Strapline",
+            "description": "Text below the link",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        }
+    }
+}
