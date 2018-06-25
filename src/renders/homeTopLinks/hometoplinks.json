@@ -16,11 +16,11 @@
       "items": {
         "allOf": [
           {
-            "$ref": "http://schema.system.cms.amplience.com/v0.0#/content-link"
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
           },
           {
             "properties": {
-              "@type": {
+              "contentType": {
                 "enum": [
                   "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTopLink/hometoplink.json"
                 ]
