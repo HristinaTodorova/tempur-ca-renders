@@ -1,0 +1,62 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/textWithTwoButtons/textwithtwobuttons.json",
+    "title": "Homepage top banner",
+    "description": "The top banner on Homepage",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "headline",
+        "strapline",
+        "text",
+        "cta"
+    ],
+    "type": "object",
+    "properties": {
+        "text": {
+            "title": "Text",
+            "description": "Text",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/text.json"
+                }
+            ]
+        },
+        "headline": {
+            "title": "Headline",
+            "description": "The main title of this banner",
+            "type": "string",
+            "format": "text",
+            "minLength": 5,
+            "maxLength": 256
+        },
+        "strapline": {
+            "title": "Strapline",
+            "description": "The subtitle for this banner",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        },
+        "priceDetails": {
+            "title": "Price details",
+            "description": "Price details",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        },
+        "firstButton": {
+            "type": "object",
+            "title": "First Button",
+            "description": "",
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+        },
+        "secondButton": {
+            "type": "object",
+            "title": "Second Button",
+            "description": "",
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+        }
+    }
+}
