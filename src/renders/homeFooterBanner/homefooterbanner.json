@@ -1,0 +1,61 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeFooterBanner/homefooterbanner.json",
+    "title": "Home page footer banner",
+    "description": "Footer banner on Homepage",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "image",
+        "headline",
+        "strapline",
+        "cta"
+    ],
+    "type": "object",
+    "properties": {
+        "image": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "title": "image",
+                                "enum": [
+                                    "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Footer Banner Image",
+            "description": "Select or create an image content"
+        },
+        "headline": {
+            "title": "Headline",
+            "description": "The main title of this banner",
+            "type": "string",
+            "format": "text",
+            "minLength": 1,
+            "maxLength": 256
+        },
+        "strapline": {
+            "title": "Strapline",
+            "description": "The subtitle for this banner",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        },
+        "cta": {
+            "type": "object",
+            "title": "Call to action",
+            "description": "",
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+        }
+    }
+}
