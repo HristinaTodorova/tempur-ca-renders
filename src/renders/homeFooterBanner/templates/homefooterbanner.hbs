@@ -1,15 +1,15 @@
 <div class="home-footer-banner row">
     <div class="home-footer-banner-info-wrap col-6 col-sm-12">
         <div class="home-footer-banner-info">
-            {{#if headline}}
-            <div class="home-footer-banner-header">{{headline}}</div>
+            {{#if header}}
+            <div class="home-footer-banner-header">{{header}}</div>
             {{/if}}
-            {{#if strapline}}
-            <div class="home-footer-banner-subheader">{{strapline}}</div>
+            {{#if subheader}}
+            <div class="home-footer-banner-subheader">{{subheader}}</div>
             {{/if}}
-            {{#if cta.value}}
-            <a href="{{cta.value}}"
-               class="home-footer-banner-button {{#if style}}{{style}}{{/if}}">{{cta.label}}</a>
+            {{#if button.value}}
+            <a href="{{button.value}}"
+               class="home-footer-banner-button {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
             {{/if}}
         </div>
     </div>
