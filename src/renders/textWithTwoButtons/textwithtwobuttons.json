@@ -9,27 +9,65 @@
     "propertyOrder": [
         "headline",
         "strapline",
-        "text",
-        "cta"
+        "priceDetails",
+        "paragraphs",
+        "listItems",
+        "firstButton",
+        "secondButton"
     ],
     "type": "object",
     "properties": {
-        "text": {
-            "title": "Text",
-            "description": "Text",
-            "type": "object",
-            "allOf": [
-                {
-                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/text.json"
-                }
-            ]
+        "paragraphs": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "title": "paragraphs",
+                                "enum": [
+                                    "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/text.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Paragraphs",
+            "description": "",
+            "maxItems": 8
+        },
+        "listItems": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "title": "list items",
+                              "enum": [
+                                "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/text.json"
+                              ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "List Items",
+            "description": "",
+            "maxItems": 15
         },
         "headline": {
             "title": "Headline",
             "description": "The main title of this banner",
             "type": "string",
             "format": "text",
-            "minLength": 5,
             "maxLength": 256
         },
         "strapline": {
