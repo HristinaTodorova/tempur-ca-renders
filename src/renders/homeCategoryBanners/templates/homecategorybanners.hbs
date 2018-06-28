@@ -1,0 +1,54 @@
+<div class="container hidden-xl-up">
+    <div class="row">
+        <div class="col-sm-6">
+            {{#if firstLink.value}}
+            <a href="{{firstLink.value}}" class="category-link">
+                {{dynamicTemplate renderTypes.image renderTypes firstImage}}
+                <div>{{firstLink.label}}</div>             
+            </a>
+            {{/if}}
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    {{#if secondLink.value}}
+                    <a href="{{secondLink.value}}"  class="category-link">
+                        {{dynamicTemplate renderTypes.image renderTypes secondImage}}
+                        <div>{{secondLink.label}}</div>
+                    </a>
+                    {{/if}}
+                </div>
+                <div class="col-sm-12">
+                    {{#if thirdLink.value}}
+                    <a href="{{thirdLink.value}}"  class="category-link">
+                        {{dynamicTemplate renderTypes.image renderTypes thirdImage}}
+                        <div>{{thirdLink.label}}</div>
+                    </a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            {{#if fourthLink.value}}
+            <a href="{{fourthLink.value}}" class="category-link">
+                {{dynamicTemplate renderTypes.image renderTypes fourthImage}}
+                <div>{{fourthLink.label}}</div>
+            </a>
+            {{/if}}
+        </div>
+        <div class="col-sm-6">
+            {{#if fifthLink.value}}
+            <a href="{{fifthLink.value}}" class="category-link">
+                {{dynamicTemplate renderTypes.image renderTypes fifthImage}}
+                <div>{{fifthLink.label}}</div>
+            </a>
+            {{/if}}
+        </div>
+    </div>
+</div>
+
+<div class="container hidden-lg-down">
+    <div class="row"></div>
+</div>

@@ -1,0 +1,112 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeCategoryBanners/homecategorybanners.json",
+    "title": "Homepage category banners",
+    "description": "Homepage category banners",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "header",
+        "firstImage",
+        "firstLink",
+        "secondImage",
+        "secondLink",
+        "thirdImage",
+        "thirdLink",
+        "fourthImage",
+        "fourthLink",
+        "fifthImage",
+        "fifthLink"
+    ],
+    "type": "object",
+    "properties": {
+        "header": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 255,
+            "title": "Header",
+            "description": "add header"
+        },
+        "firstImage": {
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+            "title": "Main category background image",
+            "description": "",
+            "type": "object"
+        },
+        "firstLink": {
+            "title": "Link to the main category",
+            "description": "",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+                }
+            ]
+        },
+        "secondImage": {
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+            "title": "Category background image",
+            "description": "",
+            "type": "object"
+        },
+        "secondLink": {
+            "title": "Link to the category",
+            "description": "",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+                }
+            ]
+        },
+        "thirdImage": {
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+            "title": "Category background image",
+            "description": "",
+            "type": "object"
+        },
+        "thirdLink": {
+            "title": "Link to the categoryy",
+            "description": "",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+                }
+            ]
+        },
+        "fourthImage": {
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+            "title": "Category background image",
+            "description": "",
+            "type": "object"
+        },
+        "fourthLink": {
+            "title": "Link to the category",
+            "description": "",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+                }
+            ]
+        },
+        "fifthImage": {
+            "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+            "title": "Category background image",
+            "description": "",
+            "type": "object"
+        },
+        "fifthLink": {
+            "title": "Link to the category",
+            "description": "",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+                }
+            ]
+        }
+    }
+}
