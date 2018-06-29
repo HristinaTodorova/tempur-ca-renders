@@ -1,0 +1,46 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeContentTabs/homecontenttabs.json",
+    "title": "Home page content tabs",
+    "description": "Home page content tabs",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "header",
+        "tabs"
+    ],
+    "type": "object",
+    "properties": {
+        "header": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 255,
+            "title": "Header",
+            "description": "add header"
+        },
+        "tabs": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "title": "tab",
+                                "enum": [
+                                    "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/contentTab/contenttab.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "maxItems": 5,
+            "title": "Content tabs",
+            "description": "Create tabs"
+        }
+    }
+}

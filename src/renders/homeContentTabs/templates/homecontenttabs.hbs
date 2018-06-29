@@ -1,0 +1,21 @@
+<div class="home-page-mattresses-tabs">
+    <ul class="nav nav-tabs nav-fill mattresses-tabs" role="tablist">
+        {{#each tabs}}
+        <li class="nav-item">
+            <a class="nav-link {{tabName}}-tab" data-toggle="tab" href="#{{tabName}}-mattress" role="tab">
+                {{tabName}}
+            </a>
+        </li>
+        {{/each}}
+     </ul>
+</div>
+
+<div class="tab-content container">
+    {{#each tabs}}
+    <div class="tab-pane {{tabName}}-mattress" id="{{tabName}}-mattress" role="tabpanel">
+        <div class="row">
+            {{dynamicTemplate [@id] ../renderTypes this @index}}
+        </div>
+    </div>
+    {{/each}}
+</div>

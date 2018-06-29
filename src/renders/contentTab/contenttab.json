@@ -1,0 +1,44 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/contentTab/contenttab.json",
+    "title": "Content tab",
+    "description": "Content tab",
+    "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+    ],
+    "propertyOrder": [
+        "tabName",
+        "tabContent",
+        "tabImage"
+    ],
+    "type": "object",
+    "properties": {
+        "tabName": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 255,
+            "title": "Title of tab",
+            "description": "add tab title"
+        },
+        "tabContent": {
+            "title": "Tab Content",
+            "description": "add tab content",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/textWithTwoButtons/textwithtwobuttons.json"
+                }
+            ]
+        },
+        "tabImage": {
+            "title": "Tab Image",
+            "description": "add tab image",
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/imageLayers/imagelayers.json"
+                }
+            ]
+        }
+    }
+}
