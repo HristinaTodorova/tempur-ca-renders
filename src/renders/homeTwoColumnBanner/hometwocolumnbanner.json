@@ -1,58 +1,58 @@
 {
-    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/contentTab/hometwocolumnbanner.json",
-    "title": "Two column banner",
-    "description": "Two column banner",
-    "allOf": [
-        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
-    ],
-    "propertyOrder": [
-        "firstColumnContent",
-        "firstColumnImage",
-        "secondColumnContent",
-        "secondColumnImage"
-    ],
-    "type": "object",
-    "properties": {
-        "firstColumnContent": {
-            "title": "First Column Content",
-            "description": "add content",
-            "type": "object",
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/textWithTwoButtons/textwithtwobuttons.json"
-                }
-            ]
-        },
-        "firstColumnImage": {
-            "title": "First Column Image",
-            "description": "add image",
-            "type": "object",
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/imageLayers/imagelayers.json"
-                }
-            ]
-        },
-        "secondColumnContent": {
-            "title": "Second Column Content",
-            "description": "add content",
-            "type": "object",
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/textWithTwoButtons/textwithtwobuttons.json"
-                }
-            ]
-        },
-        "secondColumnImage": {
-            "title": "Second Column Image",
-            "description": "add image",
-            "type": "object",
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/imageLayers/imagelayers.json"
-                }
-            ]
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeTwoColumnBanner/hometwocolumnbanner.json",
+  "title": "Two column banner",
+  "description": "Two column banner",
+  "allOf": [
+    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+  ],
+  "propertyOrder": [
+    "firstColumnContent",
+    "firstColumnImage",
+    "secondColumnContent",
+    "secondColumnImage"
+  ],
+  "type": "object",
+  "properties": {
+    "firstColumnContent": {
+      "title": "First Column Content",
+      "description": "add content",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/textWithTwoButtons/textwithtwobuttons.json"
         }
+      ]
+    },
+    "firstColumnImage": {
+      "title": "First Column Image",
+      "description": "add image",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/imageLayers/imagelayers.json"
+        }
+      ]
+    },
+    "secondColumnContent": {
+      "title": "Second Column Content",
+      "description": "add content",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/textWithTwoButtons/textwithtwobuttons.json"
+        }
+      ]
+    },
+    "secondColumnImage": {
+      "title": "Second Column Image",
+      "description": "add image",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/imageLayers/imagelayers.json"
+        }
+      ]
     }
+  }
 }
