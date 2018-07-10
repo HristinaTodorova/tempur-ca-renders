@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<div class="js_banner_wrap"></div>
+<div class="home-footer-banner"></div>
 
 
 <script src="https://dev-solutions.s3.amazonaws.com/ca-frontend-renders/dist/reusable/renderTypes.js"></script>
@@ -55,7 +55,7 @@
         callback: function (data) {
             data[0].renderTypes = renderTypes;
             var template = Handlebars.template(AmpCa.templates.banner);
-            document.querySelectorAll(".js_banner_wrap")[0].innerHTML = template(data[0]);
+            document.querySelectorAll(".home-footer-banner")[0].innerHTML = template(data[0]);
         },
         formatData: function (data) {
             return amp.inlineContent(JSON.parse(data));
