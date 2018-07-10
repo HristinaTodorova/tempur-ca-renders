@@ -54,7 +54,7 @@
         url: getQueryVar('src'),
         callback: function (data) {
             data[0].renderTypes = renderTypes;
-            var template = Handlebars.template(AmpCa.templates.banner);
+            var template = Handlebars.template(AmpCa.templates.homefooterbanner);
             document.querySelectorAll(".home-footer-banner")[0].innerHTML = template(data[0]);
         },
         formatData: function (data) {
