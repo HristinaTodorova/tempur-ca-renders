@@ -29,7 +29,7 @@
 </head>
 <body>
 
-    <div class="js_video_wrap"></div>
+    <div class="home-footer-banner container"></div>
 
     <script type="text/javascript" src="https://dev-solutions.s3.amazonaws.com/dc-renders/dist/reusable/utils.js"></script>
     <script type="text/javascript" src="https://dev-solutions.s3.amazonaws.com/dc-renders/dist/reusable/handlebars_helpers.js"></script>
@@ -66,8 +66,7 @@
                 templateName: 'homefooterbanner'
             },
             callback: function (data) {
-                document.querySelectorAll(".js_video_wrap")[0].innerHTML = data;
-                AmpCa.utils.postProcessing.execHtmlService('homefooterbanner', {});
+                document.querySelectorAll(".home-footer-banner")[0].innerHTML = data;
             }
         });
     </script>
