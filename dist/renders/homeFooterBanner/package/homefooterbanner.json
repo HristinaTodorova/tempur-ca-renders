@@ -1,0 +1,48 @@
+{
+   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+   "id": "https://raw.githubusercontent.com/HristinaTodorova/tempur-ca-renders/master/src/renders/homeFooterBanner/homefooterbanner.json",
+   "title": "Homepage footer banner",
+   "description": "Footer banner on Homepage",
+   "allOf": [
+       { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+   ],
+  "propertyOrder": [
+    "image",
+    "header",
+    "subheader",
+    "button"
+  ],
+  "type": "object",
+  "properties": {
+    "image": {
+      "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
+      "title": "Homepage footer banner image",
+      "description": "Homepage footer banner image",
+      "type": "object"
+    },
+    "header": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Header",
+      "description": "add header"
+    },
+    "subheader": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Subheader",
+      "description": "add subheader"
+    },
+    "button": {
+      "title": "Button",
+      "description": "add button",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+        }
+      ]
+    }
+  }
+}

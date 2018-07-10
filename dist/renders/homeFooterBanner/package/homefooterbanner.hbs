@@ -1,0 +1,19 @@
+<div class="home-footer-banner row">
+    <div class="home-footer-banner-info-wrap order-2 order-md-1 col-6 col-sm-12">
+        <div class="home-footer-banner-info">
+            {{#if header}}
+            <div class="home-footer-banner-header">{{header}}</div>
+            {{/if}}
+            {{#if subheader}}
+            <div class="home-footer-banner-subheader">{{subheader}}</div>
+            {{/if}}
+            {{#if button.value}}
+            <a href="{{button.value}}"
+               class="home-footer-banner-button {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
+            {{/if}}
+        </div>
+    </div>
+    <div class="home-footer-banner-img-wrap col-6 col-sm-12 order-1 order-md-2">
+        {{dynamicTemplate renderTypes.image renderTypes image}}
+    </div>
+</div>
